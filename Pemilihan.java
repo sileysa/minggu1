@@ -5,7 +5,7 @@ public class Pemilihan {
         Scanner sc = new Scanner(System.in);
         int tugas, kuis, uts, uas;
         double nilaiAkhir, totalNilai;
-        String nilaiHuruf;
+        String nilaiHuruf = "";
 
         System.out.println("Program Menghitung Nilai Akhir");
         System.out.println("==============================");
@@ -66,6 +66,10 @@ public class Pemilihan {
         System.out.println("==============================");
         System.out.println("==============================");
         
-        
+        if (nilaiHuruf.equals("A")||nilaiHuruf.equals("B+")||nilaiHuruf.equals("B")||nilaiHuruf.equals("C+")||nilaiHuruf.equals("C")) {
+            System.out.println("SELAMAT ANDA LULUS");
+        } else {
+            System.out.println("MAAF ANDA TIDAK LULUS");
+        }
     }
 }
